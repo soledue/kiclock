@@ -20,7 +20,7 @@ open class KiClock: UIView {
             return clockView.delegate
         }
     }
-    @objc open var face: KiClockFaceProtocol? {
+    open var face: KiClockFaceProtocol? {
         set {
             clockView.face = newValue
         }

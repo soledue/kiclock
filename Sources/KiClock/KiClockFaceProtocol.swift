@@ -5,7 +5,7 @@
 //
 #if os(iOS)
 import UIKit
-public protocol KiClockFaceProtocol {
+public protocol KiClockFaceProtocol: class {
     var angle270: Float { get }
     var angle30 : Float { get }
     var angle180: Float { get }

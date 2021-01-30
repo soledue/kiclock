@@ -6,8 +6,9 @@
 #if os(iOS)
 import UIKit
 
-@objc public protocol KiClockDelegate: class {
-    func kiClock(view: KiClock, didChangeDate: Date)
+@objc
+public protocol KiClockDelegate: class {
+    @objc func kiClock(view: KiClock, didChangeDate: Date)
 }
 @IBDesignable
 open class KiClock: UIView {
@@ -20,7 +21,7 @@ open class KiClock: UIView {
             return clockView.delegate
         }
     }
-    @objc open var face: KiClockFaceProtocol? {
+    open var face: KiClockFaceProtocol? {
         set {
             clockView.face = newValue
         }

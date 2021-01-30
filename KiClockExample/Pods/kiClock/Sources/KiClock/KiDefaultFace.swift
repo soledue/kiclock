@@ -15,7 +15,7 @@ open class KiDefaultFace: KiClockFaceProtocol {
     open var clockColor: UIColor = .white
     open var clockLabelsFont: UIFont = UIFont.systemFont(ofSize: 20)
     open var timeLabelTextColor: UIColor = .black
-    private(set) var bounds: CGRect
+    public var bounds: CGRect
     open var centerCircleLineColor: UIColor = .black
     required public init(bounds: CGRect) {
         self.bounds = bounds
@@ -24,7 +24,7 @@ open class KiDefaultFace: KiClockFaceProtocol {
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    var bottomLayer: CAShapeLayer? {
+    public var bottomLayer: CAShapeLayer? {
         let layer = CAShapeLayer()
         layer.frame = bounds
         layer.cornerRadius = radius
@@ -99,7 +99,7 @@ open class KiDefaultFace: KiClockFaceProtocol {
         return layer
     }
     
-    var topLayer: CAShapeLayer? {
+    public var topLayer: CAShapeLayer? {
         let layer = CAShapeLayer ()
         let smallRadius: CGFloat = 8
         let path = UIBezierPath(ovalIn: CGRect(x: clockCenter.x - smallRadius, y: clockCenter.y - smallRadius, width: smallRadius * 2, height: smallRadius * 2))
