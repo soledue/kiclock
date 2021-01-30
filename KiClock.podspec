@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.swift_versions     = ['4.2','5.0','5.1','5.2']
   s.requires_arc       = true
 
-  s.source_files       = 'Sources/*.swift'
+  s.source_files       = 'Sources/KiClock/*.swift'
   s.ios.framework      = 'UIKit'
 
 end
