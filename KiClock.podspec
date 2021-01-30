@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "kiClock"
+  s.name         = "KiClock"
   s.version      = "1.0.0"
   s.summary      = "A siple analogic clock"
 

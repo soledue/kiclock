@@ -1,0 +1,32 @@
+{
+  "name": "kiClock",
+  "version": "1.0.0",
+  "summary": "A siple analogic clock",
+  "homepage": "https://github.com/soledue/kiclock.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ivailo Kanev": "ivo@kanev.it"
+  },
+  "source": {
+    "git": "https://github.com/soledue/kiclock.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": [
+    "4.2",
+    "5.0",
+    "5.1",
+    "5.2"
+  ],
+  "requires_arc": true,
+  "source_files": "Sources/*.swift",
+  "ios": {
+    "frameworks": "UIKit"
+  },
+  "swift_version": "5.2"
+}

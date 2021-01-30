@@ -4,7 +4,7 @@
 target 'KiClockExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'KiClock', :git => 'https://github.com/soledue/kiclock.git', :branch => 'develop'
+  pod 'kiClock', :git => 'https://github.com/soledue/kiclock.git', :branch => 'develop'
   # Pods for KiClockExample
 
 end
