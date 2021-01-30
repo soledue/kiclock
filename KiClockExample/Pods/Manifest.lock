@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   KiClock:
-    :commit: cefcd79c9dde6e2951dec3c39fd2bffdb4680693
+    :commit: f600d23b55ee406b950b1435d4e5950bbf7d81d9
     :git: https://github.com/soledue/kiclock.git
 
 SPEC CHECKSUMS:

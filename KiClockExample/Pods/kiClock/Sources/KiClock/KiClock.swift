@@ -6,7 +6,7 @@
 #if os(iOS)
 import UIKit
 
-public protocol KiClockDelegate: class {
+@objc public protocol KiClockDelegate: class {
     func kiClock(view: KiClock, didChangeDate: Date)
 }
 @IBDesignable

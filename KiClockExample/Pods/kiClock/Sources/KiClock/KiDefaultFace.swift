@@ -5,24 +5,23 @@
 //
 #if os(iOS)
 import UIKit
-class KiDefaultFace: KiClockFaceProtocol {
-    public var clockBorderColor: UIColor = .black
-    public var clockBorderWidth: CGFloat = 1.0
-    public var hourClockIndexColor: UIColor = .black
-    public var hourClockIndexWidth: CGFloat = 4.0
-    public var minuteClockIndexColor: UIColor = .black
-    public var minuteClockIndexWidth: CGFloat = 2.0
-    public var clockColor: UIColor = .white
-    public var clockLabelsFont: UIFont = UIFont.systemFont(ofSize: 20)
-    public var timeLabelTextColor: UIColor = .black
+open class KiDefaultFace: KiClockFaceProtocol {
+    open var clockBorderColor: UIColor = .black
+    open var clockBorderWidth: CGFloat = 1.0
+    open var hourClockIndexColor: UIColor = .black
+    open var hourClockIndexWidth: CGFloat = 4.0
+    open var minuteClockIndexColor: UIColor = .black
+    open var minuteClockIndexWidth: CGFloat = 2.0
+    open var clockColor: UIColor = .white
+    open var clockLabelsFont: UIFont = UIFont.systemFont(ofSize: 20)
+    open var timeLabelTextColor: UIColor = .black
     private(set) var bounds: CGRect
-    
-    public var centerCircleLineColor: UIColor = .black
-    required init(bounds: CGRect) {
+    open var centerCircleLineColor: UIColor = .black
+    required public init(bounds: CGRect) {
         self.bounds = bounds
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     var bottomLayer: CAShapeLayer? {
