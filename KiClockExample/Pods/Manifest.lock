@@ -1,0 +1,22 @@
+PODS:
+  - KiClock (1.0.0)
+
+DEPENDENCIES:
+  - KiClock (from `https://github.com/soledue/kiclock.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  KiClock:
+    :branch: develop
+    :git: https://github.com/soledue/kiclock.git
+
+CHECKOUT OPTIONS:
+  KiClock:
+    :commit: fab4b9aac643a9dd7ffbe51c707b84587969b544
+    :git: https://github.com/soledue/kiclock.git
+
+SPEC CHECKSUMS:
+  KiClock: fdde5beee3abe0e318c925af1501a0accc93cffa
+
+PODFILE CHECKSUM: caef1227ca0f2a6ac80220eef43861ce17c1c896
+
+COCOAPODS: 1.10.1

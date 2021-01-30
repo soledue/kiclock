@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import KiClock
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
