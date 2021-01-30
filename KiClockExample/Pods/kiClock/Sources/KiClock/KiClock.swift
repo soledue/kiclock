@@ -12,7 +12,7 @@ public protocol KiClockDelegate: class {
 @IBDesignable
 open class KiClock: UIView {
     // MARK: - Pubic properties
-    open weak var delegate: KiClockDelegate? {
+    @objc open weak var delegate: KiClockDelegate? {
         set {
             clockView.delegate = newValue
         }
@@ -20,7 +20,7 @@ open class KiClock: UIView {
             return clockView.delegate
         }
     }
-    open var face: KiClockFaceProtocol? {
+    @objc open var face: KiClockFaceProtocol? {
         set {
             clockView.face = newValue
         }
@@ -69,7 +69,7 @@ open class KiClock: UIView {
     }
     
     // MARK: - Private var
-    private let clockView = KiClockView()
+    internal let clockView = KiClockView()
     
     // MARK: - Initialize
     override public init(frame: CGRect) {
@@ -125,7 +125,7 @@ open class KiClock: UIView {
         minuteHandColor = .black
     }
 }
-fileprivate class KiClockView: UIView {
+internal class KiClockView: UIView {
     weak var delegate: KiClockDelegate?
     var face: KiClockFaceProtocol?
     fileprivate var hourHandWidth: CGFloat = 15.0

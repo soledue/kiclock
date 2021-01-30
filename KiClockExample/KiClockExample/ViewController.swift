@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var kiClock: KiClock! {
         didSet {
-            
+            kiClock.dele
         }
     }
     override func viewDidLoad() {
