@@ -24,7 +24,7 @@
     "5.2"
   ],
   "requires_arc": true,
-  "source_files": "Sources/*.swift",
+  "source_files": "Sources/KiClock/*.swift",
   "ios": {
     "frameworks": "UIKit"
   },

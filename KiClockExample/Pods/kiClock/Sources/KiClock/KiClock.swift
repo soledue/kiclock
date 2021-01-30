@@ -10,9 +10,9 @@ public protocol KiClockDelegate: class {
     func kiClock(view: KiClock, didChangeDate: Date)
 }
 @IBDesignable
-open class KiClock: UIView {
+public class KiClock: UIView {
     // MARK: - Pubic properties
-    open weak var delegate: KiClockDelegate? {
+    weak var delegate: KiClockDelegate? {
         set {
             clockView.delegate = newValue
         }
@@ -20,7 +20,7 @@ open class KiClock: UIView {
             return clockView.delegate
         }
     }
-    open var face: KiClockFaceProtocol? {
+    var face: KiClockFaceProtocol? {
         set {
             clockView.face = newValue
         }
@@ -28,11 +28,10 @@ open class KiClock: UIView {
             return clockView.face
         }
     }
-    open var timeZone: TimeZone?
-    open var currentDate = Date()
+    var timeZone: TimeZone?
+    var currentDate = Date()
     
-    @IBInspectable
-    open var hourHandWidth: CGFloat {
+    @IBInspectable public var hourHandWidth: CGFloat {
         set {
             clockView.hourHandWidth = newValue
         }
@@ -40,8 +39,7 @@ open class KiClock: UIView {
             return clockView.hourHandWidth
         }
     }
-    @IBInspectable
-    open var minuteHandWidth: CGFloat {
+    @IBInspectable public var minuteHandWidth: CGFloat {
         set {
             clockView.minuteHandWidth = newValue
         }
@@ -49,8 +47,7 @@ open class KiClock: UIView {
             return clockView.minuteHandWidth
         }
     }
-    @IBInspectable
-    open var hourHandColor: UIColor {
+    @IBInspectable public var hourHandColor: UIColor {
        set {
             clockView.hourHandColor = newValue
         }
@@ -58,8 +55,7 @@ open class KiClock: UIView {
             return clockView.hourHandColor
         }
     }
-    @IBInspectable
-    open var minuteHandColor: UIColor {
+    @IBInspectable public var minuteHandColor: UIColor {
         set {
             clockView.minuteHandColor = newValue
         }
@@ -72,22 +68,22 @@ open class KiClock: UIView {
     private let clockView = KiClockView()
     
     // MARK: - Initialize
-    override public init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
-    required public init?(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }
     convenience init() {
         self.init(frame: .zero)
     }
-    open override func prepareForInterfaceBuilder() {
+    public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setup()
     }
-    open override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         super.draw(rect)
         clockView.redrawClock()
     }
@@ -125,7 +121,7 @@ open class KiClock: UIView {
         minuteHandColor = .black
     }
 }
-fileprivate class KiClockView: UIView {
+private class KiClockView: UIView {
     weak var delegate: KiClockDelegate?
     var face: KiClockFaceProtocol?
     fileprivate var hourHandWidth: CGFloat = 15.0
@@ -344,8 +340,7 @@ fileprivate class KiClockView: UIView {
         delegate?.kiClock(view: superview as! KiClock, didChangeDate: currentDate)
     }
     //MARK: - Gesture Action
-    @objc
-    func hourAction(gesture: UIPanGestureRecognizer) {
+    @objc func hourAction(gesture: UIPanGestureRecognizer) {
         let point = gesture.location(in: self)
         if gesture.state == .began {
             startAngle = currentHourAngle
@@ -362,8 +357,7 @@ fileprivate class KiClockView: UIView {
             startAngle = endAngle
         }
     }
-    @objc
-    func minuteAction(gesture: UIPanGestureRecognizer) {
+    @objc func minuteAction(gesture: UIPanGestureRecognizer) {
         let point = gesture.location(in: self)
         if gesture.state == .began {
             startAngle = currentMinuteAngle

@@ -9,6 +9,11 @@ import UIKit
 import KiClock
 class ViewController: UIViewController {
 
+    @IBOutlet weak var kiClock: KiClock! {
+        didSet {
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

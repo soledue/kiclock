@@ -1,0 +1,6 @@
+framework module KiClock {
+  umbrella header "KiClock-umbrella.h"
+
+  export *
+  module * { export * }
+}
