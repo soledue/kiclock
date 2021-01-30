@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,17 +33,17 @@
 		08675A86E8227D1C97CEEA3C1F11341A /* Pods-KiClockExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KiClockExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		0B4F1425CD89BC1515BEFDEBE4E5B873 /* Pods-KiClockExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KiClockExample-dummy.m"; sourceTree = "<group>"; };
 		0DAB6DE856B7EA069ED9B52AACD9BA57 /* KiClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KiClock.debug.xcconfig; sourceTree = "<group>"; };
-		113055A933A5189B0B85EAE8551E4E81 /* KiClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KiClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		113055A933A5189B0B85EAE8551E4E81 /* KiClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KiClock.framework; path = KiClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857B52D61A0A6C666B4FF60D4E0C810 /* Pods-KiClockExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KiClockExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2295AE0089CAD0DCABB167A21EDFA9DC /* KiClock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KiClock-dummy.m"; sourceTree = "<group>"; };
 		3F800D3DB2C2F87BBED435A267E886A6 /* Pods-KiClockExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KiClockExample.debug.xcconfig"; sourceTree = "<group>"; };
-		4C8933037FDFA3138967C2393FA45EA7 /* Pods_KiClockExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KiClockExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8933037FDFA3138967C2393FA45EA7 /* Pods_KiClockExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KiClockExample.framework; path = "Pods-KiClockExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56794C15352EBBB29FEEA86D78DBDD06 /* KiClock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KiClock-umbrella.h"; sourceTree = "<group>"; };
 		5B8F9C14C941278104878039A98F0CB1 /* KiClock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KiClock-prefix.pch"; sourceTree = "<group>"; };
 		7BB7DB17F4EC5EE7E92100B39798AB3F /* Pods-KiClockExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KiClockExample.release.xcconfig"; sourceTree = "<group>"; };
 		7C6F94C6750ED1184B2A68A0AAC44E05 /* Pods-KiClockExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KiClockExample-frameworks.sh"; sourceTree = "<group>"; };
 		800F946D3E2FE1177E1005EA41DCA4BA /* KiClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KiClock.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9071E21E698E1484A9AA3E1CA11B3CB /* Pods-KiClockExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KiClockExample.modulemap"; sourceTree = "<group>"; };
 		ADAFDE66C5BB992015229FB48EAC03E0 /* KiClock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KiClock.swift; path = Sources/KiClock/KiClock.swift; sourceTree = "<group>"; };
 		B4AF27CAFDF5FAECE6B13462BBB71B25 /* KiClock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KiClock.modulemap; sourceTree = "<group>"; };
@@ -141,6 +141,7 @@
 				F3544863D4C1CA2FE04C29521018DD42 /* KiDefaultFace.swift */,
 				314A12CC83EB1D01F570DF5A69BA83B9 /* Support Files */,
 			);
+			name = KiClock;
 			path = KiClock;
 			sourceTree = "<group>";
 		};
@@ -239,10 +240,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -325,7 +326,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KiClock/KiClock-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KiClock/KiClock-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,7 +528,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KiClock/KiClock-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KiClock/KiClock-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
