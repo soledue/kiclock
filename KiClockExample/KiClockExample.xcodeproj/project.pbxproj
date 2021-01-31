@@ -13,8 +13,23 @@
 		6DA8C19C25C5D32B000010B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8C19A25C5D32B000010B7 /* Main.storyboard */; };
 		6DA8C19E25C5D32E000010B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8C19D25C5D32E000010B7 /* Assets.xcassets */; };
 		6DA8C1A125C5D32E000010B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8C19F25C5D32E000010B7 /* LaunchScreen.storyboard */; };
-		AF89EE966BAB131AA646DBFC /* Pods_KiClockExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF570BE43BA99DD1E60EB3F2 /* Pods_KiClockExample.framework */; };
+		6DA8C1D525C5F249000010B7 /* Pods_KiClockExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF570BE43BA99DD1E60EB3F2 /* Pods_KiClockExample.framework */; };
+		6DA8C1D625C5F249000010B7 /* Pods_KiClockExample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF570BE43BA99DD1E60EB3F2 /* Pods_KiClockExample.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DA8C1D725C5F249000010B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DA8C1D625C5F249000010B7 /* Pods_KiClockExample.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C23A7D73C7C4A3BD907AC1B /* Pods-KiClockExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiClockExample.release.xcconfig"; path = "Target Support Files/Pods-KiClockExample/Pods-KiClockExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF89EE966BAB131AA646DBFC /* Pods_KiClockExample.framework in Frameworks */,
+				6DA8C1D525C5F249000010B7 /* Pods_KiClockExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +118,7 @@
 				6DA8C18E25C5D32B000010B7 /* Frameworks */,
 				6DA8C18F25C5D32B000010B7 /* Resources */,
 				A21F6333AF9B166F015C308C /* [CP] Embed Pods Frameworks */,
+				6DA8C1D725C5F249000010B7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,12 +373,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W242LE97PH;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = arm64;
 				INFOPLIST_FILE = KiClockExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = it.kanev.KiClockExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

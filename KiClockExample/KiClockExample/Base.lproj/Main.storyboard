@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eC-Ot-2bV" customClass="KiClock" customModule="KiClock">
-                                <rect key="frame" x="102" y="337" width="240" height="128"/>
+                                <rect key="frame" x="102" y="238" width="178" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -31,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
     <resources>

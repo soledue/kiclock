@@ -70,7 +70,7 @@ open class KiClock: UIView {
     }
     
     // MARK: - Private var
-    internal let clockView = KiClockView()
+    private let clockView = KiClockView()
     
     // MARK: - Initialize
     override public init(frame: CGRect) {
@@ -126,7 +126,7 @@ open class KiClock: UIView {
         minuteHandColor = .black
     }
 }
-internal class KiClockView: UIView {
+private class KiClockView: UIView {
     weak var delegate: KiClockDelegate?
     var face: KiClockFaceProtocol?
     fileprivate var hourHandWidth: CGFloat = 15.0

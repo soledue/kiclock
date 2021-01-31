@@ -7,7 +7,11 @@
 
 import UIKit
 import KiClock
-class ViewController: UIViewController {
+class ViewController: UIViewController, KiClockDelegate {
+    func kiClock(view: KiClock, didChangeDate: Date) {
+        
+    }
+    
 
     @IBOutlet weak var kiClock: KiClock! {
         didSet {
