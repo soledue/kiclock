@@ -16,7 +16,7 @@ class ViewController: UIViewController, KiClockDelegate {
     @IBOutlet weak var kiClock: KiClock! {
         didSet {
             kiClock.delegate = self
-            kiClock.face = KiDefaultFace()
+            kiClock.face = KiClockFaceFun()
         }
     }
     override func viewDidLoad() {

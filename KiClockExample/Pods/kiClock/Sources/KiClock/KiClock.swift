@@ -143,7 +143,11 @@ open class KiClock: UIView {
 }
 private class KiClockView: UIView {
     weak var delegate: KiClockDelegate?
-    var face: KiClockFaceProtocol?
+    var face: KiClockFaceProtocol? {
+        didSet {
+            redrawClock()
+        }
+    }
     fileprivate var hourHandWidth: CGFloat = 15.0
     fileprivate var minuteHandWidth: CGFloat = 8.0
     fileprivate var hourHandColor: UIColor = .black
@@ -228,10 +232,7 @@ private class KiClockView: UIView {
     }
     private func relodClock() {
         clear()
-        let face = self.face ?? KiDefaultFace(bounds: bounds)
-        if let bottom = face.bottomLayer {
-            layer.addSublayer(bottom)
-        }
+        face?.draw(bottom: self)
         
         hourHandView = { () -> UIView in
             let hourHandView = UIView(frame: CGRect(x: 0, y: 0, width: handGestureWith, height: hourHandLength))
@@ -262,9 +263,8 @@ private class KiClockView: UIView {
         minuteHandView.center = convert(center, from: superview)
         hourHandView.center = convert(center, from: superview)
         
-        if let top = face.topLayer {
-            layer.addSublayer(top)
-        }
+        face?.draw(top: self)
+
     }
     
     private func calculateAngle(hour: Int) -> Float {

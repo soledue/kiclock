@@ -18,9 +18,7 @@ open class KiClockFaceModern: KiClockFaceProtocol {
     }
     open var centerCircleLineColor: UIColor = .black
     private var parent: UIView?
-    init() {
-        
-    }
+
     public func draw(bottom view: UIView) {
         parent = view
         let layer = CAShapeLayer()

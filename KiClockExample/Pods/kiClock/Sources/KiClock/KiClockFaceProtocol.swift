@@ -12,10 +12,11 @@ public protocol KiClockFaceProtocol: class {
     var angle360 : Float { get }
     var radius: CGFloat { get }
     var clockCenter: CGPoint { get }
-    var bottomLayer: CAShapeLayer? { get }
-    var topLayer: CAShapeLayer? { get }
-    var bounds: CGRect { get }
-    init(bounds: CGRect)
+    var bounds: CGRect{ get }
+    func draw(bottom view: UIView)
+    func draw(top view: UIView)
+    func convert(_ degree: Double) -> CGFloat 
+    init()
 }
 public extension KiClockFaceProtocol {
     var angle270: Float {
@@ -36,8 +37,9 @@ public extension KiClockFaceProtocol {
     var clockCenter: CGPoint {
         return CGPoint(x: radius, y: radius)
     }
-    init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+
+    func convert(_ degree: Double) -> CGFloat {
+        return CGFloat(.pi * degree / 180.0)
     }
 }
 #endif

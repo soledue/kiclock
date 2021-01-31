@@ -16,7 +16,7 @@ public protocol KiClockFaceProtocol: class {
     func draw(bottom view: UIView)
     func draw(top view: UIView)
     func convert(_ degree: Double) -> CGFloat 
-
+    init()
 }
 public extension KiClockFaceProtocol {
     var angle270: Float {
