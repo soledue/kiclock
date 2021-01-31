@@ -37,7 +37,9 @@ public extension KiClockFaceProtocol {
     var clockCenter: CGPoint {
         return CGPoint(x: radius, y: radius)
     }
-
+    init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     func convert(_ degree: Double) -> CGFloat {
         return CGFloat(.pi * degree / 180.0)
     }
