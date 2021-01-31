@@ -5,7 +5,7 @@
 //
 #if os(iOS)
 import UIKit
-open class KiDefaultFace: KiClockFaceProtocol {
+open class KiClockFaceDefault: KiClockFaceProtocol {
     open var clockBorderColor: UIColor = .black
     open var clockBorderWidth: CGFloat = 1.0
     open var hourClockIndexColor: UIColor = .black
@@ -15,16 +15,14 @@ open class KiDefaultFace: KiClockFaceProtocol {
     open var clockColor: UIColor = .white
     open var clockLabelsFont: UIFont = UIFont.systemFont(ofSize: 20)
     open var timeLabelTextColor: UIColor = .black
-    public var bounds: CGRect
+    public var bounds: CGRect {
+        return parent?.bounds ?? .null
+    }
     open var centerCircleLineColor: UIColor = .black
-    required public init(bounds: CGRect) {
-        self.bounds = bounds
-    }
-    
-    required public init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    public var bottomLayer: CAShapeLayer? {
+    private var parent: UIView?
+
+    public func draw(bottom view: UIView) {
+        parent = view
         let layer = CAShapeLayer()
         layer.frame = bounds
         layer.cornerRadius = radius
@@ -96,10 +94,11 @@ open class KiDefaultFace: KiClockFaceProtocol {
         layer.insertSublayer(clockLayer, at: 0)
         
         setupTimeLabel(layer: layer)
-        return layer
+        parent?.layer.insertSublayer(layer, at: 0)
     }
     
-    public var topLayer: CAShapeLayer? {
+    public func draw(top view: UIView) {
+        parent = view
         let layer = CAShapeLayer ()
         let smallRadius: CGFloat = 8
         let path = UIBezierPath(ovalIn: CGRect(x: clockCenter.x - smallRadius, y: clockCenter.y - smallRadius, width: smallRadius * 2, height: smallRadius * 2))
@@ -107,7 +106,7 @@ open class KiDefaultFace: KiClockFaceProtocol {
         layer.strokeColor = UIColor.white.cgColor
         layer.fillColor = centerCircleLineColor.cgColor
         layer.path = path.cgPath
-        return layer
+        parent?.layer.addSublayer(layer)
     }
     
     private func setupTimeLabel(layer: CAShapeLayer) {

@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1297432552AC6D3369E38A90137821FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		193A76D3CD398E9B4E6FC75BEE1A4ADF /* KiClock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295AE0089CAD0DCABB167A21EDFA9DC /* KiClock-dummy.m */; };
-		4ACBFD86EFE5ADC6650BF140DAC57E0F /* KiClock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56794C15352EBBB29FEEA86D78DBDD06 /* KiClock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1297432552AC6D3369E38A90137821FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1CE1953B792522688E37D376048522B6 /* KiClockFaceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC897E667A489ECD72E4EA13BC1E3F31 /* KiClockFaceProtocol.swift */; };
+		237E82E1CAEF63F35BE9D6C78546829E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		316429F774D92399C087081FD9D11BBC /* KiClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAFDE66C5BB992015229FB48EAC03E0 /* KiClock.swift */; };
+		45A1AC4631226953B31B3A775D79EE85 /* KiClock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56794C15352EBBB29FEEA86D78DBDD06 /* KiClock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AF446DF9E053EF2B519DCB7F5AB24F1 /* Pods-KiClockExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F1425CD89BC1515BEFDEBE4E5B873 /* Pods-KiClockExample-dummy.m */; };
-		6DF5DC8763C89483E0560C7B23AE1F83 /* KiDefaultFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3544863D4C1CA2FE04C29521018DD42 /* KiDefaultFace.swift */; };
+		A233CF1B8729A28B8E77B6569A2353E8 /* KiClock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295AE0089CAD0DCABB167A21EDFA9DC /* KiClock-dummy.m */; };
 		AAD79CF3F37CB9D0D0A65E259AF3C400 /* Pods-KiClockExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D42F0F85BC4F394EDF7C1A3023689210 /* Pods-KiClockExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4FF74E5F4F9FBCB352E0D1DBF19FA4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		BFB3CDBFAD328ED32587D3293886184A /* KiClockFaceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC897E667A489ECD72E4EA13BC1E3F31 /* KiClockFaceProtocol.swift */; };
-		CFF7C1C07B2AA3502554C41BB3654923 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		D9B96788C598C3B430544262B26911A3 /* KiClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAFDE66C5BB992015229FB48EAC03E0 /* KiClock.swift */; };
+		B5ECC0B16E50CD3279A9F8076FC3439F /* KiDefaultFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3544863D4C1CA2FE04C29521018DD42 /* KiDefaultFace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,36 +32,34 @@
 		08675A86E8227D1C97CEEA3C1F11341A /* Pods-KiClockExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KiClockExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		0B4F1425CD89BC1515BEFDEBE4E5B873 /* Pods-KiClockExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KiClockExample-dummy.m"; sourceTree = "<group>"; };
 		0DAB6DE856B7EA069ED9B52AACD9BA57 /* KiClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KiClock.debug.xcconfig; sourceTree = "<group>"; };
-		113055A933A5189B0B85EAE8551E4E81 /* KiClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KiClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		113055A933A5189B0B85EAE8551E4E81 /* KiClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KiClock.framework; path = KiClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857B52D61A0A6C666B4FF60D4E0C810 /* Pods-KiClockExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KiClockExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2295AE0089CAD0DCABB167A21EDFA9DC /* KiClock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KiClock-dummy.m"; sourceTree = "<group>"; };
 		3F800D3DB2C2F87BBED435A267E886A6 /* Pods-KiClockExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KiClockExample.debug.xcconfig"; sourceTree = "<group>"; };
-		4C8933037FDFA3138967C2393FA45EA7 /* Pods_KiClockExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KiClockExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8933037FDFA3138967C2393FA45EA7 /* Pods_KiClockExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KiClockExample.framework; path = "Pods-KiClockExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56794C15352EBBB29FEEA86D78DBDD06 /* KiClock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KiClock-umbrella.h"; sourceTree = "<group>"; };
 		5B8F9C14C941278104878039A98F0CB1 /* KiClock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KiClock-prefix.pch"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7BB7DB17F4EC5EE7E92100B39798AB3F /* Pods-KiClockExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KiClockExample.release.xcconfig"; sourceTree = "<group>"; };
 		7C6F94C6750ED1184B2A68A0AAC44E05 /* Pods-KiClockExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KiClockExample-frameworks.sh"; sourceTree = "<group>"; };
 		800F946D3E2FE1177E1005EA41DCA4BA /* KiClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KiClock.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9071E21E698E1484A9AA3E1CA11B3CB /* Pods-KiClockExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KiClockExample.modulemap"; sourceTree = "<group>"; };
 		ADAFDE66C5BB992015229FB48EAC03E0 /* KiClock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KiClock.swift; path = Sources/KiClock/KiClock.swift; sourceTree = "<group>"; };
 		B4AF27CAFDF5FAECE6B13462BBB71B25 /* KiClock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KiClock.modulemap; sourceTree = "<group>"; };
 		C02C4183443B7373A44E3DAF71DD65A0 /* KiClock-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KiClock-Info.plist"; sourceTree = "<group>"; };
-		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D42F0F85BC4F394EDF7C1A3023689210 /* Pods-KiClockExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KiClockExample-umbrella.h"; sourceTree = "<group>"; };
-		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EE0AC0BF6F33006FA522979068B21203 /* Pods-KiClockExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KiClockExample-Info.plist"; sourceTree = "<group>"; };
 		F3544863D4C1CA2FE04C29521018DD42 /* KiDefaultFace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KiDefaultFace.swift; path = Sources/KiClock/KiDefaultFace.swift; sourceTree = "<group>"; };
 		FC897E667A489ECD72E4EA13BC1E3F31 /* KiClockFaceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KiClockFaceProtocol.swift; path = Sources/KiClock/KiClockFaceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D08B06AF39BF45E9F4EA84BCCC5F7F0A /* Frameworks */ = {
+		9E81219367961A5BB67F1867F77318DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4FF74E5F4F9FBCB352E0D1DBF19FA4B /* Foundation.framework in Frameworks */,
-				CFF7C1C07B2AA3502554C41BB3654923 /* UIKit.framework in Frameworks */,
+				237E82E1CAEF63F35BE9D6C78546829E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,14 +80,6 @@
 				43F9BFFEFEF52EF4065E2D41D7FA7627 /* KiClock */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1C297F9F5DC7A65EFD05296E1E613CA1 /* Pods-KiClockExample */ = {
@@ -141,6 +130,7 @@
 				F3544863D4C1CA2FE04C29521018DD42 /* KiDefaultFace.swift */,
 				314A12CC83EB1D01F570DF5A69BA83B9 /* Support Files */,
 			);
+			name = KiClock;
 			path = KiClock;
 			sourceTree = "<group>";
 		};
@@ -153,11 +143,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
-				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -166,11 +155,19 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				07692E13529476FD916F6E1106F88CEA /* Pods */,
 				4DEED8B154AEF607DA3FF8D561AF9D57 /* Products */,
 				21C25B0E18EB4B49E19254F831819F52 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,11 +181,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC0AE6687ED536636004EE8DD425E030 /* Headers */ = {
+		F09C966BDB8C089B5AE6C1621ECB1C51 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ACBFD86EFE5ADC6650BF140DAC57E0F /* KiClock-umbrella.h in Headers */,
+				45A1AC4631226953B31B3A775D79EE85 /* KiClock-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,12 +194,12 @@
 /* Begin PBXNativeTarget section */
 		1D35404ABF6EFE852605E5E730B04AD8 /* KiClock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8665C957A76941F5B40E12E079A7FE82 /* Build configuration list for PBXNativeTarget "KiClock" */;
+			buildConfigurationList = 1DB7F1C35904D2B275B6439411F91813 /* Build configuration list for PBXNativeTarget "KiClock" */;
 			buildPhases = (
-				FC0AE6687ED536636004EE8DD425E030 /* Headers */,
-				AE7F08F2E20ADDAAFEC324A5DB6782DF /* Sources */,
-				D08B06AF39BF45E9F4EA84BCCC5F7F0A /* Frameworks */,
-				04526925019FDC6B24C19D25BED928FC /* Resources */,
+				F09C966BDB8C089B5AE6C1621ECB1C51 /* Headers */,
+				C3D3B42094EBD5B984110DE4B236357B /* Sources */,
+				9E81219367961A5BB67F1867F77318DC /* Frameworks */,
+				EC59D67409345F19BBAEA4EF3046D304 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -239,7 +236,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -261,14 +258,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		04526925019FDC6B24C19D25BED928FC /* Resources */ = {
+		294BB7EBFD6BD31EA9C9B693B43B5F27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		294BB7EBFD6BD31EA9C9B693B43B5F27 /* Resources */ = {
+		EC59D67409345F19BBAEA4EF3046D304 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,14 +283,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE7F08F2E20ADDAAFEC324A5DB6782DF /* Sources */ = {
+		C3D3B42094EBD5B984110DE4B236357B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				193A76D3CD398E9B4E6FC75BEE1A4ADF /* KiClock-dummy.m in Sources */,
-				D9B96788C598C3B430544262B26911A3 /* KiClock.swift in Sources */,
-				BFB3CDBFAD328ED32587D3293886184A /* KiClockFaceProtocol.swift in Sources */,
-				6DF5DC8763C89483E0560C7B23AE1F83 /* KiDefaultFace.swift in Sources */,
+				A233CF1B8729A28B8E77B6569A2353E8 /* KiClock-dummy.m in Sources */,
+				316429F774D92399C087081FD9D11BBC /* KiClock.swift in Sources */,
+				1CE1953B792522688E37D376048522B6 /* KiClockFaceProtocol.swift in Sources */,
+				B5ECC0B16E50CD3279A9F8076FC3439F /* KiDefaultFace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,42 +306,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		584EA60C9C0675666A8EFD2E3393710F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 800F946D3E2FE1177E1005EA41DCA4BA /* KiClock.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KiClock/KiClock-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KiClock/KiClock-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/KiClock/KiClock.modulemap";
-				PRODUCT_MODULE_NAME = KiClock;
-				PRODUCT_NAME = KiClock;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		5861EDD63364578ABE7BF06DE2AB023B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BB7DB17F4EC5EE7E92100B39798AB3F /* Pods-KiClockExample.release.xcconfig */;
@@ -511,7 +472,7 @@
 			};
 			name = Debug;
 		};
-		AE2426109B34BEC70B5ABA771CE3878C /* Debug */ = {
+		8B72292D570655F607DD2E9215EFB4BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0DAB6DE856B7EA069ED9B52AACD9BA57 /* KiClock.debug.xcconfig */;
 			buildSettings = {
@@ -524,18 +485,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"EXCLUDED_ARCHS[sdk=iphoneos*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/KiClock/KiClock-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KiClock/KiClock-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/KiClock/KiClock.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_MODULE_NAME = KiClock;
 				PRODUCT_NAME = KiClock;
 				SDKROOT = iphoneos;
@@ -547,6 +506,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B35D4CE95D55205FCC98953774324CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800F946D3E2FE1177E1005EA41DCA4BA /* KiClock.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KiClock/KiClock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KiClock/KiClock-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KiClock/KiClock.modulemap";
+				PRODUCT_MODULE_NAME = KiClock;
+				PRODUCT_NAME = KiClock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		C81057A10B7238538A2E5A36C741B3CC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -562,7 +557,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"EXCLUDED_ARCHS[sdk=iphoneos*]" = arm64;
 				INFOPLIST_FILE = "Target Support Files/Pods-KiClockExample/Pods-KiClockExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -573,7 +567,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-KiClockExample/Pods-KiClockExample.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -590,20 +583,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1DB7F1C35904D2B275B6439411F91813 /* Build configuration list for PBXNativeTarget "KiClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B72292D570655F607DD2E9215EFB4BE /* Debug */,
+				B35D4CE95D55205FCC98953774324CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
 				71243899B61152433AAE34EE86456EE7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8665C957A76941F5B40E12E079A7FE82 /* Build configuration list for PBXNativeTarget "KiClock" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AE2426109B34BEC70B5ABA771CE3878C /* Debug */,
-				584EA60C9C0675666A8EFD2E3393710F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
