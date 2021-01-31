@@ -29,8 +29,22 @@ open class KiClock: UIView {
             return clockView.face
         }
     }
-    open var timeZone: TimeZone?
-    open var currentDate = Date()
+    open var timeZone: TimeZone? {
+        set {
+            clockView.timeZone = newValue
+        }
+        get {
+            return clockView.timeZone
+        }
+    }
+    open var currentDate: Date {
+        set {
+            clockView.currentDate = newValue
+        }
+        get {
+            return clockView.currentDate
+        }
+    }
     
     @IBInspectable
     open var hourHandWidth: CGFloat {
@@ -95,6 +109,7 @@ open class KiClock: UIView {
     // MARK: - Setup
     private func setup() {
         `default`()
+        clockView.removeFromSuperview()
         addSubview(clockView)
         clockView.translatesAutoresizingMaskIntoConstraints = false
         clockView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
@@ -198,10 +213,6 @@ private class KiClockView: UIView {
     // MARK: - Lifecicle
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        redrawClock()
-    }
-    override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
         redrawClock()
     }
     // MARK: - Public
@@ -346,7 +357,7 @@ private class KiClockView: UIView {
     }
     //MARK: - Gesture Action
     @objc
-    func hourAction(gesture: UIPanGestureRecognizer) {
+    private func hourAction(gesture: UIPanGestureRecognizer) {
         let point = gesture.location(in: self)
         if gesture.state == .began {
             startAngle = currentHourAngle
@@ -364,7 +375,7 @@ private class KiClockView: UIView {
         }
     }
     @objc
-    func minuteAction(gesture: UIPanGestureRecognizer) {
+    private func minuteAction(gesture: UIPanGestureRecognizer) {
         let point = gesture.location(in: self)
         if gesture.state == .began {
             startAngle = currentMinuteAngle

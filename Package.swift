@@ -13,7 +13,6 @@ let package = Package(
             name: "KiClock",
             targets: ["KiClock"]),
     ],
-
     targets: [
         .target(
             name: "KiClock",
